@@ -1,0 +1,43 @@
+{
+  "name": "smartsheet-typescript-sdk",
+  "version": "0.0.1",
+  "description": "because the standard sdk is archaic",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:ts",
+    "build:ts": "npm run clean && tsc",
+    "clean": "rm -rf lib",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config=jest.config.json",
+    "verify": "npm run lint && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyitsjeoff/smartsheet-typescript-sdk.git"
+  },
+  "keywords": [
+    "smartsheet",
+    "sdk",
+    "typescript"
+  ],
+  "author": "christopherjeoff+github@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyitsjeoff/smartsheet-typescript-sdk/issues"
+  },
+  "homepage": "https://github.com/heyitsjeoff/smartsheet-typescript-sdk#readme",
+  "devDependencies": {
+    "@types/jest": "24.0.0",
+    "@types/node": "10.12.24",
+    "dotenv": "^6.2.0",
+    "jest": "24.1.0",
+    "ts-jest": "23.10.5",
+    "ts-node": "8.0.2",
+    "tslint": "5.12.1",
+    "tslint-config-airbnb": "5.11.1",
+    "typescript": "3.3.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
